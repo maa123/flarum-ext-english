@@ -119,13 +119,13 @@ core:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_renaming_label: Allow renaming
-      allow_post_editing_label: Allow post editing
-      create_heading: Create
-      delete_discussions_forever_label: Delete discussions forever
-      delete_discussions_label: Delete discussions
-      delete_posts_forever_label: Delete posts forever
-      edit_and_delete_posts_label: Edit and delete posts
+      allow_renaming_label: 名前の変更を許可
+      allow_post_editing_label: ポストの編集を許可
+      create_heading: 作成
+      delete_discussions_forever_label: 投稿を永久に削除する
+      delete_discussions_label: 投稿を削除する
+      delete_posts_forever_label: ポストを永久に削除する
+      edit_and_delete_posts_label: ポストの編集/削除
       global_heading: グローバル
       moderate_heading: Moderate
       new_group_button: 新しいグループ

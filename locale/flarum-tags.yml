@@ -57,38 +57,38 @@ flarum-tags:
 
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
-      choose_primary_placeholder: "Choose a primary tag|Choose {count} primary tags"
-      choose_secondary_placeholder: "Choose 1 more tag|Choose {count} more tags"
-      edit_title: "Edit Tags for {title}"
+      choose_primary_placeholder: "重要なタグを一つ選んでください|重要なタグを{count}個選んでください"
+      choose_secondary_placeholder: "タグをもう一つ選択してください|タグを後{count}個選択してください"
+      edit_title: "{title}のタグを編集"
       submit_button: => core.ref.okay
-      title: Choose Tags for Your Discussion
+      title: タグを選択してください
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      choose_tags_link: Choose Tags
+      choose_tags_link: タグを選択
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      edit_tags_button: Edit Tags
+      edit_tags_button: タグを編集
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
-      more_link: More...
+      more_link: もっと...
       tags_link: => flarum-tags.ref.tags
-      untagged_link: Untagged
+      untagged_link: 外す
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      added_tags_text: "{username} added the {tagsAdded}."
-      added_and_removed_tags_text: "{username} added the {tagsAdded} and removed the {tagsRemoved}."
-      removed_tags_text: "{username} removed the {tagsRemoved}."
+      added_tags_text: "{username}が{tagsAdded}を追加"
+      added_and_removed_tags_text: "{username}が{tagsAdded}を追加し、{tagsRemoved}を削除"
+      removed_tags_text: "{username} が {tagsRemoved}を削除"
       tags_text: "{tags} tag|{tags} tags"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
 
     # This translation is displayed in place of the name of a tag that's been deleted.
-    deleted_tag_text: Deleted
+    deleted_tag_text: 削除された
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -96,6 +96,6 @@ flarum-tags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    create_tag: Create Tag
-    name: Name
-    tags: Tags
+    create_tag: タグを作成
+    name: 名前
+    tags: タグ
