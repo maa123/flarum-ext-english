@@ -1,5 +1,5 @@
 {
-    "name": "flarum/flarum-ext-japanese",
+    "name": "maa123/flarum-ext-japanese",
     "type": "flarum-extension",
     "description": "Japanese language pack.",
     "keywords": ["locale","japanese"],
