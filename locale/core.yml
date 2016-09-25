@@ -5,21 +5,21 @@ core:
       install_text: "In the meantime, you can look for extensions at the <a>Flarum Community site</a> and install them manually using Composer."
       temporary_text: "One day in the not-too-distant future, this dialog will allow you to add an extension to your forum with ease. We're building an ecosystem as we speak!"
     appearance:
-      colored_header_label: Colored Header
-      colors_heading: Colors
-      colors_text: "Choose two colors to theme your forum with. The first will be used as a highlight color, while the second will be used to style background elements."
-      custom_header_heading: Custom Header
-      custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
-      custom_styles_heading: Custom Styles
-      custom_styles_text: Customize your forum's appearance by adding your own LESS/CSS code to be applied on top of Flarum's default styles.
-      dark_mode_label: Dark Mode
-      edit_css_button: Edit Custom CSS
-      edit_header_button: Edit Custom Header
-      enter_hex_message: Please enter a hexadecimal color code.
-      favicon_heading: Favicon
-      favicon_text: Upload an image to be displayed as the forum's shortcut icon.
-      logo_heading: Logo
-      logo_text: Upload an image to be displayed in place of the forum title.
+      colored_header_label: 色付きのヘッダー
+      colors_heading: 色
+      colors_text: "あなたのフォーラムのテーマカラーを選択してくだはい。1つ目はハイライトカラーに使用され2つ目は背景色になります。"
+      custom_header_heading: カスタムヘッダー
+      custom_header_text: "HTMLはFlarumのヘッダーの上に表示されます"
+      custom_styles_heading: カスタムスタイル
+      custom_styles_text: CSSをFlarumの上に追加して表示をカスタマイズできます。
+      dark_mode_label: ダークモード
+      edit_css_button: CSSを編集
+      edit_header_button: カスタムヘッダーを編集
+      enter_hex_message: 16進数のカラーコードを入力してください。
+      favicon_heading: ファビコン
+      favicon_text: 画像をアップロードするとフォーラムのファビコンとして使用されます。
+      logo_heading: ロゴ
+      logo_text: 画像をアップロードするとフォーラムのタイトルの代わりに表示されます。
       submit_button: => core.ref.save_changes
 
     # These translations are used in the Basics page.
