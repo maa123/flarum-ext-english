@@ -1,19 +1,9 @@
 core:
-
-  ##
-  # UNIQUE KEYS - The following keys are used in only one location each.
-  ##
-
-  # Translations in this namespace are used by the admin interface.
   admin:
-
-    # These translations are used in the placeholder Add Extension modal dialog.
     add_extension:
       developer_text: "If you're a developer, you can <a>read the docs</a> and have a go at building your own extensions."
       install_text: "In the meantime, you can look for extensions at the <a>Flarum Community site</a> and install them manually using Composer."
       temporary_text: "One day in the not-too-distant future, this dialog will allow you to add an extension to your forum with ease. We're building an ecosystem as we speak!"
-
-    # These translations are used in the Appearance page.
     appearance:
       colored_header_label: Colored Header
       colors_heading: Colors
@@ -487,35 +477,35 @@ core:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    all_discussions: All Discussions
-    change_email: Change Email
-    change_password: Change Password
+    all_discussions: すべての投稿
+    change_email: メールアドレスを変更する
+    change_password: パスワードを変更する
     confirm_password: Confirm Password
-    confirmation_email_sent: "We've sent a confirmation email to {email}. If it doesn't arrive soon, check your spam folder."
-    delete: Delete
+    confirmation_email_sent: "{email}にメールを送信しました。 もし届いていなければスパム/迷惑メールフォルダをご確認ください。"
+    delete: 削除
     delete_forever: Delete Forever
-    discussions: Discussions
-    edit: Edit
-    email: Email
-    load_more: Load More
-    log_in: Log In
-    log_out: Log Out
+    discussions: 投稿
+    edit: 編集
+    email: メールアドレス
+    load_more: もっと読む
+    log_in: ログイン
+    log_out: ログアウト
     mark_all_as_read: Mark All as Read
-    next_page: Next Page
-    notifications: Notifications
+    next_page: 次へ
+    notifications: 通知
     okay: OK                                     # Referenced by flarum-tags.yml
-    password: Password
-    reply: Reply                                 # Referenced by flarum-mentions.yml
-    reset_your_password: Reset Your Password
-    restore: Restore
-    save_changes: Save Changes                   # Referenced by flarum-suspend.yml, flarum-tags.yml
-    settings: Settings
-    sign_up: Sign Up
+    password: パスワード
+    reply: リプライ                                 # Referenced by flarum-mentions.yml
+    reset_your_password: パスワードをリセットする
+    restore: リストア
+    save_changes: 変更を保存                   # Referenced by flarum-suspend.yml, flarum-tags.yml
+    settings: 設定
+    sign_up: 登録
     some_others: "{count} other|{count} others"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: Start a Discussion
-    username: Username
-    write_a_reply: Write a Reply...
-    you: You                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
+    start_a_discussion: 投稿を作成する
+    username: ユーザーネーム
+    write_a_reply: リプライを書いてください
+    you: あなた                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
   # GROUP NAMES - These keys are translated at the back end.
