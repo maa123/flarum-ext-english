@@ -4,6 +4,6 @@
 ## インストール方法
 ## Installation
 
-composer require 
+composer require maa123/flarum-ext-japanese
 
 
