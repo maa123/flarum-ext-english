@@ -1,8 +1,8 @@
 {
-    "name": "flarum/flarum-ext-english",
+    "name": "flarum/flarum-ext-japanese",
     "type": "flarum-extension",
-    "description": "English language pack.",
-    "keywords": ["locale"],
+    "description": "Japanese language pack.",
+    "keywords": ["locale","japanese"],
     "license": "MIT",
     "require": {
         "flarum/core": "^0.1.0-beta.5"
@@ -12,17 +12,17 @@
             "dev-master": "0.1.x-dev"
         },
         "flarum-extension": {
-            "title": "English",
+            "title": "Japanese",
             "icon": {
-                "image": "icon.svg",
+                "maae": "language",
                 "backgroundColor": "#00247d",
                 "backgroundSize": "cover",
                 "backgroundPosition": "center"
             }
         },
         "flarum-locale": {
-            "code": "en",
-            "title": "English"
+            "code": "ja",
+            "title": "Japanese"
         }
     }
 }
