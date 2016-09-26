@@ -106,14 +106,14 @@ core:
     nav:
       appearance_button: Appearance
       appearance_text: "Customize your forum's colors, logos, and other variables."
-      basics_button: Basics
-      basics_text: "Set your forum title, language, and other basic settings."
+      basics_button: ベーシック
+      basics_text: "フォーラムの言語、タイトル、その他の基本設定をします。"
       dashboard_button: ダッシュボード
-      dashboard_text: Your forum at a glance.
+      dashboard_text: あなたのフォーラムの一覧
       email_button: => core.ref.email
-      email_text: "Configure your forum's email settings."
+      email_text: "フォーラムのメールアドレスの設定を行います"
       extensions_button: 拡張機能
-      extensions_text: Add extra functionality to your forum and make it your own.
+      extensions_text: フォーラムに拡張機能を追加し、またそれはあなたが作ることもできます。
       permissions_button: 権限
       permissions_text: 誰が何を見て、何を出来るか設定できます。
 
