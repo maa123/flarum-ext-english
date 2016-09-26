@@ -3,7 +3,7 @@ core:
     add_extension:
       developer_text: "If you're a developer, you can <a>read the docs</a> and have a go at building your own extensions."
       install_text: "In the meantime, you can look for extensions at the <a>Flarum Community site</a> and install them manually using Composer."
-      temporary_text: "One day in the not-too-distant future, this dialog will allow you to add an extension to your forum with ease. We're building an ecosystem as we speak!"
+      temporary_text: "そのうちこのダイアログで簡単に拡張機能を導入できるようになります!"
     appearance:
       colored_header_label: 色付きのヘッダー
       colors_heading: 色
@@ -30,7 +30,7 @@ core:
       forum_description_text: Enter a short sentence or two that describes your community. This will appear in the meta tag and show up in search engines.
       forum_title_heading: フォーラムのタイトル
       home_page_heading: ホームページ
-      home_page_text: "Choose the page which users will first see when they visit your forum. If entering a custom value, use the path relative to the forum root."
+      home_page_text: "アクセスした人に最初に見せるページを設定します。変更する場合は、フォーラムのルートディレクトリからの相対パスを入力してください。"
       saved_message: 変更が保存されました
       submit_button: => core.ref.save_changes
       welcome_banner_heading: 初期メッセージ
@@ -108,14 +108,14 @@ core:
       appearance_text: "Customize your forum's colors, logos, and other variables."
       basics_button: Basics
       basics_text: "Set your forum title, language, and other basic settings."
-      dashboard_button: Dashboard
+      dashboard_button: ダッシュボード
       dashboard_text: Your forum at a glance.
       email_button: => core.ref.email
       email_text: "Configure your forum's email settings."
-      extensions_button: Extensions
+      extensions_button: 拡張機能
       extensions_text: Add extra functionality to your forum and make it your own.
-      permissions_button: Permissions
-      permissions_text: Configure who can see and do what.
+      permissions_button: 権限
+      permissions_text: 誰が何を見て、何を出来るか設定できます。
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
@@ -483,7 +483,7 @@ core:
     confirm_password: Confirm Password
     confirmation_email_sent: "{email}にメールを送信しました。 もし届いていなければスパム/迷惑メールフォルダをご確認ください。"
     delete: 削除
-    delete_forever: Delete Forever
+    delete_forever: 永久に削除
     discussions: 投稿
     edit: 編集
     email: メールアドレス
