@@ -1,8 +1,8 @@
 core:
   admin:
     add_extension:
-      developer_text: "If you're a developer, you can <a>read the docs</a> and have a go at building your own extensions."
-      install_text: "In the meantime, you can look for extensions at the <a>Flarum Community site</a> and install them manually using Composer."
+      developer_text: "あなたが開発者であれば<a>ドキュメント</a>を読んで拡張機能を作成することができます。"
+      install_text: "ここで拡張機能を探すことができ、Composerでインストールできます<a>Flarum Community site</a>"
       temporary_text: "そのうちこのダイアログで簡単に拡張機能を導入できるようになります!"
     appearance:
       colored_header_label: 色付きのヘッダー
@@ -27,7 +27,7 @@ core:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: 既定の言語
       forum_description_heading: フォーラムの説明
-      forum_description_text: Enter a short sentence or two that describes your community. This will appear in the meta tag and show up in search engines.
+      forum_description_text: コミュニティを説明する文を入力します。これはmetaタグで表示され、検索エンジンに表示されます。
       forum_title_heading: フォーラムのタイトル
       home_page_heading: ホームページ
       home_page_text: "アクセスした人に最初に見せるページを設定します。変更する場合は、フォーラムのルートディレクトリからの相対パスを入力してください。"
@@ -40,11 +40,11 @@ core:
     dashboard:
       beta_warning_text: "This <strong>beta software</strong> is provided primarily so that you can help us test it and make it better; it should not be used in production."
       contributing_text: "Want to look for bugs and contribute? Read the <a>Contributing docs</a>."
-      extension_text: "Interested in developing extensions? Read the <a>Extension docs</a>."
-      features_text: "Got an idea to improve a feature? Tell us about it under the <a>Features tag</a>."
-      support_text: "Found a bug? Please report it in our forum, under the <a>Support tag</a>."
-      troubleshooting_text: "Having problems? Follow the instructions in the <a>Troubleshooting docs</a>."
-      version_text: "Thanks for trying out Flarum! You are running version {version}."
+      extension_text: "拡張機能の開発 <a>拡張機能のドキュメントを読む</a>."
+      features_text: "機能を改善するアイデアをお持ちですか? ここで連絡してください<a>Features tag</a>."
+      support_text: "バグが有りましたか? ここで連絡してください<a>Support tag</a>"
+      troubleshooting_text: "問題がありましたか？<a>トラブルシューティング</a>を読んで下さい。"
+      version_text: "Flarumを試していただきありがとうございます! このバージョンは{version}です"
       welcome_text: "Welcome to Flarum Beta!"
 
     # These translations are used in the Edit Custom CSS modal dialog.
@@ -90,7 +90,7 @@ core:
 
     # These translations are used in the Extensions page.
     extensions:
-      add_button: Add Extension
+      add_button: 拡張機能を追加
       settings_button: => core.ref.settings
       uninstall_button: Uninstall
 
@@ -100,12 +100,12 @@ core:
 
     # These translations are used in the modal dialog displayed when loading extensions.
     loading:
-      title: Please Wait...
+      title: 暫くお待ちください...
 
     # These translations are used in the navigation bar.
     nav:
-      appearance_button: Appearance
-      appearance_text: "Customize your forum's colors, logos, and other variables."
+      appearance_button: 外観
+      appearance_text: "フォーラムの色やロゴ等を変更します"
       basics_button: ベーシック
       basics_text: "フォーラムの言語、タイトル、その他の基本設定をします。"
       dashboard_button: ダッシュボード
