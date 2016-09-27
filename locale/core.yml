@@ -38,8 +38,8 @@ core:
 
 
     dashboard:
-      beta_warning_text: "This <strong>beta software</strong> is provided primarily so that you can help us test it and make it better; it should not be used in production."
-      contributing_text: "Want to look for bugs and contribute? Read the <a>Contributing docs</a>."
+      beta_warning_text: "このソフトウエアは<strong>ベータ版</strong>です。大事なものには使用しないでください。"
+      contributing_text: "バグを見つけ、貢献したいですか?<a>ドキュメント</a>を読んでください。"
       extension_text: "拡張機能の開発 <a>拡張機能のドキュメントを読む</a>."
       features_text: "機能を改善するアイデアをお持ちですか? ここで連絡してください<a>Features tag</a>."
       support_text: "バグが有りましたか? ここで連絡してください<a>Support tag</a>"
@@ -49,50 +49,50 @@ core:
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
-      customize_text: "Customize your forum's appearance by adding your own LESS/CSS code to be applied on top of Flarum's <a>default styles</a>."
+      customize_text: "CSS/LESSを追加して、Flarumの<a>デフォルトの外観</a>を上書きすることができます。"
       submit_button: => core.ref.save_changes
-      title: Edit Custom CSS
+      title: カスタムCSSを編集
 
     # These translations are used in the Edit Group modal dialog.
     edit_group:
-      color_label: Color
-      delete_button: Delete Group
-      delete_confirmation: "Are you sure you want to delete this group? The group members will NOT be deleted."
-      icon_label: Icon
-      icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>without</em> the <code>fa-</code> prefix."
-      name_label: Name
-      plural_placeholder: Plural (e.g. Mods)
-      singular_placeholder: Singular (e.g. Mod)
+      color_label: 色
+      delete_button: グループを削除
+      delete_confirmation: "本当にこのグループを削除しますか?グループのユーザーは削除されません。"
+      icon_label: アイコン
+      icon_text: "<a>FontAwesome</a>でのアイコンの名前を入力してください。<code>fa-</code>は削除してください"
+      name_label: 名前
+      plural_placeholder: 複数形(例えばmods)
+      singular_placeholder: 単数形(例えばMod)
       submit_button: => core.ref.save_changes
-      title: Create Group
+      title: グループを作成
 
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
-      customize_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
+      customize_text: "HTMLを入力すると、Flarumのヘッダーの上に追加されます"
       submit_button: => core.ref.save_changes
-      title: Edit Custom Header
+      title: カスタムヘッダーを編集
 
     # These translations are used in the email page of the admin interface.
     email:
-      account_heading: SMTP Account
-      addresses_heading: Addresses
-      driver_label: Driver
-      encryption_label: Encryption
-      from_label: Sender
+      account_heading: SMTP アカウント
+      addresses_heading: アドレス
+      driver_label: ドライバー
+      encryption_label: 暗号化
+      from_label: 送信者
       heading: => core.ref.email
-      host_label: Host
+      host_label: ホスト
       password_label: => core.ref.password
-      port_label: Port
+      port_label: ポート
       server_heading: SMTP Server
       submit_button: => core.ref.save_changes
-      text: Configure the SMTP settings and addresses your forum will use to send email.
+      text: SMTPの設定。 アドレスや送信元を設定できます。
       username_label: => core.ref.username
 
     # These translations are used in the Extensions page.
     extensions:
       add_button: 拡張機能を追加
       settings_button: => core.ref.settings
-      uninstall_button: Uninstall
+      uninstall_button: アンインストール
 
     # These translations are used in the session dropdown menu.
     header:
@@ -340,7 +340,7 @@ core:
     sign_up:
       email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
-      log_in_text: "Already have an account? <a>Log In</a>"
+      log_in_text: "もうアカウントを持っていますか? <a>ログイン</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
@@ -383,14 +383,14 @@ core:
 
     # These translations are used to modify usernames.
     username:
-      deleted_text: "[deleted]"
+      deleted_text: "[削除済み]"
 
     # These translations are displayed as error messages.
     error:
-      generic_message: "Oops! Something went wrong. Please reload the page and try again."
-      not_found_message: The requested resource was not found.
-      permission_denied_message: You do not have permission to do that.
-      rate_limit_exceeded_message: You're going a little too quickly. Please try again in a few seconds.
+      generic_message: "何かのエラーが発生したようです。もう一度ページを読み込んでください。"
+      not_found_message: 要求されたコンテンツは見つかりませんでした
+      permission_denied_message: この操作をする権限を持っていません
+      rate_limit_exceeded_message: 操作が早すぎます。数秒後にもう一度お試しください。
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
@@ -480,7 +480,7 @@ core:
     all_discussions: すべての投稿
     change_email: メールアドレスを変更する
     change_password: パスワードを変更する
-    confirm_password: Confirm Password
+    confirm_password: パスワードを認証する
     confirmation_email_sent: "{email}にメールを送信しました。 もし届いていなければスパム/迷惑メールフォルダをご確認ください。"
     delete: 削除
     delete_forever: 永久に削除
@@ -490,7 +490,7 @@ core:
     load_more: もっと読む
     log_in: ログイン
     log_out: ログアウト
-    mark_all_as_read: Mark All as Read
+    mark_all_as_read: 全て既読にする
     next_page: 次へ
     notifications: 通知
     okay: OK                                     # Referenced by flarum-tags.yml
