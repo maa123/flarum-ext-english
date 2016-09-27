@@ -1,9 +1,10 @@
 # Flarumのための日本語の言語パック
 # Japanese Language Pack for Flarum
 
-一部の翻訳(主に管理画面)はまだ完了していません。
+翻訳は完了しました。もし残っている、訳がおかしい等あれば連絡をください。
+The translation was completed.
 
-Part of the translation (on the management screen's) is not yet complete.
+
 
 ## インストール方法
 ## Installation
@@ -11,3 +12,4 @@ Part of the translation (on the management screen's) is not yet complete.
 composer require maa123/flarum-ext-japanese
 
 
+Twitter:@maa123_LQ
