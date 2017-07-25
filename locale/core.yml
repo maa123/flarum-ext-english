@@ -46,7 +46,7 @@ core:
       support_text: "バグが有りましたか? ここで連絡してください<a>Support tag</a>"
       troubleshooting_text: "問題がありましたか？<a>トラブルシューティング</a>を読んで下さい。"
       version_text: "Flarumを試していただきありがとうございます! このバージョンは{version}です"
-      welcome_text: "Welcome to Flarum Beta!"
+      welcome_text: "Flarum Beta へようこそ!"
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
