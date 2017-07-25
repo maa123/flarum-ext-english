@@ -4,6 +4,7 @@ core:
       developer_text: "あなたが開発者であれば<a>ドキュメント</a>を読んで拡張機能を作成することができます。"
       install_text: "ここで拡張機能を探すことができ、Composerでインストールできます<a>Flarum Community site</a>"
       temporary_text: "そのうちこのダイアログで簡単に拡張機能を導入できるようになります!"
+      title: 拡張機能の追加
     appearance:
       colored_header_label: 色付きのヘッダー
       colors_heading: 色
@@ -45,7 +46,7 @@ core:
       support_text: "バグが有りましたか? ここで連絡してください<a>Support tag</a>"
       troubleshooting_text: "問題がありましたか？<a>トラブルシューティング</a>を読んで下さい。"
       version_text: "Flarumを試していただきありがとうございます! このバージョンは{version}です"
-      welcome_text: "Welcome to Flarum Beta!"
+      welcome_text: "Flarum Beta へようこそ!"
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
@@ -228,8 +229,13 @@ core:
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
+	　activate_button: ユーザーを有効化
+      email_heading: => core.ref.email
       email_label: => core.ref.email
+	　groups_heading: Groups
+      password_heading: => core.ref.password
       password_label: => core.ref.password
+	  set_password_label: 新しいパスワードを設定する
       submit_button: => core.ref.save_changes
       title: ユーザーを編集
       username_label: => core.ref.username
@@ -247,6 +253,7 @@ core:
     # These translations are used in the header and session dropdown menu.
     header:
       admin_button: 管理者
+	　back_to_index_tooltip: 投稿リストに戻る
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: プロフィール
@@ -276,7 +283,8 @@ core:
       forgot_password_link: "パスワードを忘れましたか?"
       invalid_login_message: ログインの情報が間違っています
       password_placeholder: => core.ref.password
-      sign_up_text: "アカウントを持っていませんか? <a>登録</a>"
+      remember_me_label: ログイン状態を保存する
+	　sign_up_text: "アカウントを持っていませんか? <a>登録</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
       username_or_email_placeholder: ユーザーネームかメールアドレス
@@ -292,7 +300,7 @@ core:
     # These translations are used by tooltips displayed for individual posts.
     post:
       edited_text: 編集済み
-      edited_tooltip: "{username} が {ago}に編集"
+      edited_tooltip: "{username} が {ago} に編集"
       number_tooltip: "Post #{number}"
 
     # These translations are used by the post control buttons.
@@ -317,6 +325,10 @@ core:
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} later"
 
+	# These translations are used by the rename discussion modal.
+    rename_discussion:
+      title: 投稿の名前を変更
+      submit_button: => core.ref.rename
     # These translations are used by the search results dropdown list.
     search:
       all_discussions_button: '"{query}"をこのフォーラムで検索する'
@@ -429,6 +441,10 @@ core:
       submit_button: パスワードをリセット
       title: => core.ref.reset_your_password
 
+	# Translations in this namespace are used in messages output by the API.
+  api:
+    invalid_username_message: "ユーザー名には英数字とハイフンのみを使用できます。"
+
   # Translations in this namespace are used in emails sent by the forum.
   email:
 
@@ -495,6 +511,7 @@ core:
     notifications: 通知
     okay: OK                                     # Referenced by flarum-tags.yml
     password: パスワード
+	rename: 名前を変更
     reply: リプライ                                 # Referenced by flarum-mentions.yml
     reset_your_password: パスワードをリセットする
     restore: リストア
@@ -502,7 +519,7 @@ core:
     settings: 設定
     sign_up: 登録
     some_others: "{count} other|{count} others"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: 投稿を作成する
+    start_a_discussion: 投稿する
     username: ユーザーネーム
     write_a_reply: リプライを書いてください
     you: あなた                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
