@@ -4,7 +4,7 @@ core:
       developer_text: "あなたが開発者であれば<a>ドキュメント</a>を読んで拡張機能を作成することができます。"
       install_text: "ここで拡張機能を探すことができ、Composerでインストールできます<a>Flarum Community site</a>"
       temporary_text: "そのうちこのダイアログで簡単に拡張機能を導入できるようになります!"
-	  title: Add Extension
+      title: 拡張機能の追加
     appearance:
       colored_header_label: 色付きのヘッダー
       colors_heading: 色
