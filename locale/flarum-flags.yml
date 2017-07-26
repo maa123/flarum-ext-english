@@ -9,47 +9,47 @@ flarum-flags:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      flag_posts_label: “Še‚Éƒtƒ‰ƒO‚ğ•t‚¯‚é
-      view_flags_label: ƒtƒ‰ƒO‚Ì•t‚¢‚½“Še‚ğ•\¦
+      flag_posts_label: æŠ•ç¨¿ã«ãƒ•ãƒ©ã‚°ã‚’ä»˜ã‘ã‚‹
+      view_flags_label: ãƒ•ãƒ©ã‚°ã®ä»˜ã„ãŸæŠ•ç¨¿ã‚’è¡¨ç¤º
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
-      guidelines_url_label: ƒRƒ~ƒ…ƒjƒeƒBƒKƒCƒhƒ‰ƒCƒ“‚ÌURL
-      title: ƒtƒ‰ƒO‚Ìİ’è
+      guidelines_url_label: ã‚³ãƒŸãƒ¥ãƒ‹ãƒ†ã‚£ã‚¬ã‚¤ãƒ‰ãƒ©ã‚¤ãƒ³ã®URL
+      title: ãƒ•ãƒ©ã‚°ã®è¨­å®š
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used by the Flag Post modal dialog.
     flag_post:
-      confirmation_message: Thank you for flagging this post. Our moderators will look into it.
+      confirmation_message: ã“ã®æŠ•ç¨¿ã«ãƒ•ãƒ©ã‚°ã‚’ä»˜ã‘ã¦ã„ãŸã ãã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€‚ãƒ¢ãƒ‡ãƒ¬ãƒ¼ã‚¿ãƒ¼ãŒç¢ºèªã—ã¾ã™ã€‚
       dismiss_button: => core.ref.okay
-      reason_inappropriate_label: •s“KØ
-      reason_inappropriate_text: "‚±‚Ì“Še‚ÍUŒ‚“IA‹s‘Ò“IA‚Ü‚½‚Í<a>ƒRƒ~ƒ…ƒjƒeƒB‚ÌƒKƒCƒhƒ‰ƒCƒ“</a>‚Éˆá”½‚µ‚Ä‚¢‚Ü‚·B"
-      reason_off_topic_label: "ƒIƒtƒgƒsƒbƒN"
-      reason_off_topic_text: ‚±‚Ì“Še‚ÍŒ»İ‚Ì‹c˜_‚Æ‚ÍŠÖŒW‚ª‚È‚­A‘¼‚ÌêŠ‚ÉˆÚ“®‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
-      reason_other_label: ‚»‚Ì‘¼
-      reason_spam_label: ƒXƒpƒ€
-      reason_spam_text: ‚±‚Ì“Še‚ÍƒXƒpƒ€‚É“–‚½‚è‚Ü‚·B
+      reason_inappropriate_label: ä¸é©åˆ‡
+      reason_inappropriate_text: "ã“ã®æŠ•ç¨¿ã¯æ”»æ’ƒçš„ã€è™å¾…çš„ã€ã¾ãŸã¯<a>ã‚³ãƒŸãƒ¥ãƒ‹ãƒ†ã‚£ã®ã‚¬ã‚¤ãƒ‰ãƒ©ã‚¤ãƒ³</a>ã«é•åã—ã¦ã„ã¾ã™ã€‚"
+      reason_off_topic_label: "ã‚ªãƒ•ãƒˆãƒ”ãƒƒã‚¯"
+      reason_off_topic_text: ã“ã®æŠ•ç¨¿ã¯ç¾åœ¨ã®è­°è«–ã¨ã¯é–¢ä¿‚ãŒãªãã€ä»–ã®å ´æ‰€ã«ç§»å‹•ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
+      reason_other_label: ãã®ä»–
+      reason_spam_label: ã‚¹ãƒ‘ãƒ 
+      reason_spam_text: ã“ã®æŠ•ç¨¿ã¯ã‚¹ãƒ‘ãƒ ã«å½“ãŸã‚Šã¾ã™ã€‚
       submit_button: => flarum-flags.ref.flag_post
       title: => flarum-flags.ref.flag_post
 
     # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
     flagged_posts:
-      empty_text: ƒtƒ‰ƒO‚Í‚ ‚è‚Ü‚¹‚ñ
+      empty_text: ãƒ•ãƒ©ã‚°ã¯ã‚ã‚Šã¾ã›ã‚“
       item_text: "{username} in <em>{discussion}</em>"
       title: => flarum-flags.ref.flagged_posts
       tooltip: => flarum-flags.ref.flagged_posts
 
     # These translations are used by the frame displayed around flagged posts.
     post:
-      dismiss_flag_button: ƒtƒ‰ƒO‚ğ‰ğœ‚·‚é
-      flagged_by_text: "{username} ‚ªƒtƒ‰ƒO‚ğ•t‚¯‚Ü‚µ‚½"
-      flagged_by_with_reason_text: "{username} ‚ª {reason} ‚Ì‚½‚ßƒtƒ‰ƒO‚ğ•t‚¯‚Ü‚µ‚½"
+      dismiss_flag_button: ãƒ•ãƒ©ã‚°ã‚’è§£é™¤ã™ã‚‹
+      flagged_by_text: "{username} ãŒãƒ•ãƒ©ã‚°ã‚’ä»˜ã‘ã¾ã—ãŸ"
+      flagged_by_with_reason_text: "{username} ãŒ {reason} ã®ãŸã‚ãƒ•ãƒ©ã‚°ã‚’ä»˜ã‘ã¾ã—ãŸ"
 
     # These translations are used by the post control buttons.
     post_controls:
-      flag_button: Flag
+      flag_button: ãƒ•ãƒ©ã‚°
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -57,5 +57,5 @@ flarum-flags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    flag_post: ƒtƒ‰ƒO‚Ì•t‚¢‚½“Še
-    flagged_posts: ƒtƒ‰ƒO‚Ì•t‚¢‚½“Še
+    flag_post: ãƒ•ãƒ©ã‚°ã®ä»˜ã„ãŸæŠ•ç¨¿
+    flagged_posts: ãƒ•ãƒ©ã‚°ã®ä»˜ã„ãŸæŠ•ç¨¿
