@@ -13,10 +13,10 @@ flarum-tags:
 
     # These translations are used in the Edit Tag modal dialog.
     edit_tag:
-      color_label: 色
+      color_label: => core.ref.color
       delete_tag_button: タグを削除する
       delete_tag_confirmation: "このタグを削除してもよろしいですか？ タグのディスカッションは削除されません。"
-      description_label: 列名
+      description_label: 説明
       hide_label: すべての投稿から隠す
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
@@ -71,6 +71,9 @@ flarum-tags:
     discussion_controls:
       edit_tags_button: タグを編集
 
+    header:
+      back_to_tags_tooltip: Back to Tag List
+
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       more_link: もっと...
@@ -79,8 +82,8 @@ flarum-tags:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      added_tags_text: "{username}が{tagsAdded}を追加"
       added_and_removed_tags_text: "{username}が{tagsAdded}を追加し、{tagsRemoved}を削除"
+      added_tags_text: "{username}が{tagsAdded}を追加"
       removed_tags_text: "{username} が {tagsRemoved}を削除"
       tags_text: "{tags} タグ|{tags} タグ"
 

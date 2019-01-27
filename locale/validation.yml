@@ -2,11 +2,13 @@ validation:
   accepted: ":attribute を受け入れる必要があります。"
   active_url: ":attribute は有効なURLではありません。"
   after: ":attribute は :date の後の日付である必要があります。"
+  after_or_equal: ":attribute は :date と同じか、後の日付である必要があります。"
   alpha: ":attribute には文字のみを含めることができます。"
   alpha_dash: ":attribute には、英数字とハイフンのみを含めることができます。"
   alpha_num: ":attribute には、英数字のみが含まれています。"
   array: ":attribute は配列である必要があります。"
   before: ":attribute は :date の前の日付である必要があります。"
+  before_or_equal: ":attribute は :date と同じか、前の日付である必要があります。"
   between:
     numeric: ":attribute は :min から :max である必要があります。"
     file: ":attribute は :min から :max キロバイトである必要があります。"
@@ -15,6 +17,7 @@ validation:
   boolean: ":attribute はtrueかfalseである必要があります。"
   confirmed: ":attribute が一致しません。"
   date: ":attribute は無効な日付です。"
+  date_equals: ":attribute は :dateと同じである必要があります。"
   date_format: ":attribute は :other と一致しません。"
   different: ":attribute は :other と異なる必要があります。"
   digits: ":attribute は:digits桁である必要があります。"
@@ -25,12 +28,34 @@ validation:
   exists: "選択された :attribute は無効です。"
   file: ":attribute はファイルである必要があります。"
   filled: ":attribute は必須項目です。"
+  gt:
+    numeric: ":attribute は :value より大きくなければなりません。"
+    file: ":attribute は :value キロバイトより大きくなければなりません。"
+    string: ":attribute は :value 文字より大きくなければなりません。"
+    array: ":attribute は :value 項目より大きくなければなりません。"
+  gte:
+    numeric: ":attribute は :value 以上である必要があります。"
+    file: ":attribute は :value キロバイト以上である必要があります。"
+    string: ":attribute は :value 文字以上である必要があります。"
+    array: ":attribute は :value 項目以上である必要があります。"
   image: ":attribute は画像である必要があります。"
   in: "選択された :attribute は無効です。"
   in_array: ":attribute は :other に存在しません。"
   integer: ":attribute は数字である必要があります。"
   ip: ":attribute は有効なIPアドレスである必要があります。"
+  ipv4: ":attribute は有効なIPv4アドレスである必要があります。"
+  ipv6: ":attribute は有効なIPv6アドレスである必要があります。"
   json: ":attribute は有効なJSON文字列である必要があります。"
+  lt:
+    numeric: ":attribute は :value 未満である必要があります。"
+    file: ":attribute は :value キロバイト未満である必要があります。"
+    string: ":attribute は :value 文字未満である必要があります。"
+    array: ":attribute は :value 項目未満である必要があります。"
+  lte:
+    numeric: ":attribute は :value 以下である必要があります。"
+    file: ":attribute は :value キロバイト以下である必要があります。"
+    string: ":attribute は :value 文字以下である必要があります。"
+    array: ":attribute は :value 項目以下である必要があります。"
   max:
     numeric: ":attribute は :max より大きくできません。"
     file: ":attribute は :max キロバイトより大きくできません。"
@@ -44,6 +69,7 @@ validation:
     string: ":attribute は少なくとも :min 文字である必要があります。"
     array: ":attribute は少なくとも :min 項目である必要があります。"
   not_in: "選択された :attribute は無効です。"
+  not_regex: ":attribute は無効なフォーマットです。"
   numeric: ":attribute は数字である必要があります。"
   present: ":attribute が存在する必要があります。"
   regex: ":attribute は無効なフォーマットです。"
@@ -60,11 +86,13 @@ validation:
     file: ":attribute は :size キロバイトである必要があります。"
     string: ":attribute は :size 文字である必要があります。"
     array: ":attribute は :size 項目である必要があります。"
+  starts_with: ":attribute は、 :values のいずれかで始まっている必要があります。"
   string: ":attribute は文字列である必要があります。"
   timezone: ":attribute は有効なタイムゾーンである必要があります。"
   unique: ":attribute はすでに使用されています。"
   uploaded: ":attribute のアップロードに失敗しました。"
   url: ":attribute は無効なフォーマットです。"
+  uuid: ":attribute は有効なUUIDである必要があります。"
 
   attributes:
     username: ユーザー名
@@ -76,7 +104,3 @@ validation:
     name_plural: 複数の名前
     tag_count_primary: プライマリタグの数
     tag_count_secondary: セカンダリタグの数
-
-  custom:
-    username:
-      regex: "ユーザー名には、文字、数字、ダッシュのみを含めることができます。"
