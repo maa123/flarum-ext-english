@@ -15,9 +15,11 @@ flarum-tags:
     edit_tag:
       color_label: => core.ref.color
       delete_tag_button: タグを削除する
-      delete_tag_confirmation: "このタグを削除してもよろしいですか？ タグのディスカッションは削除されません。"
+      delete_tag_confirmation: "このタグを削除してもよろしいですか？ このタグのついたディスカッションは削除されません。"
       description_label: 説明
       hide_label: すべての投稿から隠す
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
       slug_label: スラグ
@@ -55,6 +57,11 @@ flarum-tags:
   # Translations in this namespace are used by the forum user interface.
   forum:
 
+    # These translations are displayed on the page that lists all tags.
+    all_tags:
+      meta_description_text: すべてのタグ
+      meta_title_text: => flarum-tags.ref.tags
+
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
       choose_primary_placeholder: "重要なタグを一つ選んでください|重要なタグを{count}個選んでください"
@@ -86,6 +93,10 @@ flarum-tags:
       added_tags_text: "{username}が{tagsAdded}を追加"
       removed_tags_text: "{username} が {tagsRemoved}を削除"
       tags_text: "{tags} タグ|{tags} タグ"
+
+    # These translations are used when visiting a single tag's discussion list.
+    tag:
+      meta_description_text: "All discussions with the {tag} tag"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:

@@ -30,6 +30,8 @@ core:
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: 既定の言語
+      display_name_heading: ユーザーの表示名
+      display_name_text: ユーザーの表示名に使用するドライバーを選択します。 デフォルトでは、ユーザー名が表示されます。
       forum_description_heading: フォーラムの説明
       forum_description_text: コミュニティを説明する文を入力します。これはmetaタグで表示され、検索エンジンに表示されます。
       forum_title_heading: フォーラムのタイトル
@@ -63,8 +65,9 @@ core:
       color_label: => core.ref.color
       delete_button: グループを削除
       delete_confirmation: "本当にこのグループを削除しますか?グループのユーザーは削除されません。"
-      icon_label: アイコン
-      icon_text: "<a>FontAwesome</a>でのアイコンの名前を入力してください。<code>fas fa-</code>接頭語は含みます"
+      hide_label: フォーラムで隠す
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
       name_label: 名前
       plural_placeholder: 複数形(例えばmods)
       singular_placeholder: 単数形(例えばMod)
@@ -79,19 +82,30 @@ core:
 
     # These translations are used in the email page of the admin interface.
     email:
-      account_heading: SMTP アカウント
       addresses_heading: アドレス
+      driver_heading: ドライバーを選択
       driver_label: ドライバー
-      encryption_label: 暗号化
       from_label: 送信者
       heading: => core.ref.email
-      host_label: ホスト
-      password_label: => core.ref.password
-      port_label: ポート
-      server_heading: SMTP Server
+      mail_encryption_label: 暗号化
+      mail_host_label: ホスト
+      mail_mailgun_domain_label: ドメイン
+      mail_mailgun_region_label: 地域
+      mail_mailgun_secret_label: シークレットキー
+      mail_mandrill_secret_label: シークレットキー
+      mail_password_label: => core.ref.password
+      mail_port_label: ポート
+      mail_ses_key_label: キー
+      mail_ses_region_label: 地域
+      mail_ses_secret_label: シークレット
+      mail_username_label: => core.ref.username
+      mailgun_heading: Mailgunの設定
+      mandrill_heading: Mandrillの設定
+      not_sending_message: Flarumは現在メールを送信しません。 これは、選択したドライバー、またはその設定のエラーが原因である可能性があります。
+      ses_heading: SESの設定
+      smtp_heading: SMTPの設定
       submit_button: => core.ref.save_changes
-      text: SMTPの設定。 アドレスや送信元を設定できます。
-      username_label: => core.ref.username
+      text: フォーラムがメールの送信に使用するドライバー、アドレスを設定します。
 
     # These translations are used in the Extensions page.
     extensions:
@@ -132,17 +146,20 @@ core:
       delete_posts_forever_label: 投稿を永久に削除する
       delete_posts_label: 投稿を削除
       edit_posts_label: 投稿を編集
+      edit_users_label: ユーザーを編集
       global_heading: グローバル
       moderate_heading: モデレート
       new_group_button: 新しいグループ
       participate_heading: 参加する
+      post_without_throttle_label: 複数の返信を待たずにする
       read_heading: 閲覧する
       rename_discussions_label: 投稿の名前を変更
       reply_to_discussions_label: リプライを送る
       sign_up_label: 登録
       start_discussions_label: 投稿する
       view_discussions_label: 投稿を閲覧する
-      view_last_seen_at_label: ユーザーが最後に閲覧した時刻を確認
+      view_hidden_groups_label: 非表示のグループのバッジを表示する
+      view_last_seen_at_label: 常にユーザーが最後に閲覧した時刻を表示する
       view_post_ips_label: 投稿のIPアドレスを確認
       view_user_list_label: ユーザー一覧を確認
 
@@ -231,15 +248,15 @@ core:
       empty_text: 投稿がありません
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: 既読にする
-      replied_text: "{username} replied {ago}"
-      started_text: "{username} started {ago}"
+      replied_text: "{username} が{ago}に返信"
+      started_text: "{username} が{ago}に開始"
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
       activate_button: ユーザーを有効化
       email_heading: => core.ref.email
       email_label: => core.ref.email
-      groups_heading: Groups
+      groups_heading: グループ
       password_heading: => core.ref.password
       password_label: => core.ref.password
       set_password_label: 新しいパスワードを設定する
@@ -302,6 +319,7 @@ core:
       discussion_renamed_text: "{username} がタイトルを変更しました"
       empty_text: 通知はありません
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      mark_as_read_tooltip: Mark as Read
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
 
@@ -314,8 +332,10 @@ core:
     # These translations are used by the post control buttons.
     post_controls:
       delete_button: => core.ref.delete
+      delete_confirmation: "Are you sure you want to delete this post forever? This action cannot be undone."
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
+      hide_confirmation: "Are you sure you want to delete this post?"
       restore_button: => core.ref.restore
 
     # These translations are used in the scrubber to the right of the post stream.
@@ -385,7 +405,9 @@ core:
     user_controls:
       button: コントロール
       delete_button: => core.ref.delete
-      delete_confirmation: "本当にこのユーザーを削除しますか？このユーザーの投稿も削除されます。"
+      delete_confirmation: "本当にこのユーザーを削除しますか？このユーザーの投稿は削除されません。"
+      delete_error_message: "ユーザー: <i>{username} ({email})</i> の削除に失敗しました。"
+      delete_success_message: "ユーザー: <i>{username} ({email})</i> は削除されました。"
       edit_button: => core.ref.edit
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
@@ -404,7 +426,7 @@ core:
 
     # These translations are displayed as error messages.
     error:
-      generic_message: "何かのエラーが発生したようです。もう一度ページを読み込んでください。"
+      generic_message: "何らかのエラーが発生したようです。もう一度ページを読み込んでください。"
       not_found_message: 要求されたコンテンツは見つかりませんでした
       permission_denied_message: この操作をする権限を持っていません
       rate_limit_exceeded_message: 操作が早すぎます。数秒後にもう一度お試しください。
@@ -440,11 +462,14 @@ core:
 
     # Translations in this namespace are displayed when Flarum encounters an error.
     error:
-      403_message: このページにアクセスする権限がありません。
-      404_message: 要求するページは見つかりませんでした。
-      404_return_link: "{forum}に戻る"
-      500_message: ページの読み込み時に何らかの問題が発生しました。
-      503_message: "{forum} は現在メンテナンス中です。"
+      csrf_token_mismatch: 長時間非アクティブになっていました。
+      csrf_token_mismatch_return_link: 戻って、もう一度やり直してください
+      invalid_confirmation_token: この確認用リンクは既に使用されているか、誤っています。
+      not_authenticated: このページにアクセスする権限がありません。 ログインの後、もう一度お試しください。
+      not_found: 要求されたページは見つかりませんでした。
+      not_found_return_link: "{forum}に戻る"
+      permission_denied: このページにアクセスする権限がありません。
+      unknown: ページの読み込み時に何らかの問題が発生しました。
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
@@ -455,7 +480,7 @@ core:
     # Translations in this namespace are displayed by the Log Out confirmation interface.
     log_out:
       log_out_button: => core.ref.log_out
-      log_out_confirmation: "Are you sure you want to log out of {forum}?"
+      log_out_confirmation: "本当に{forum}からログアウトしますか？"
       title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
@@ -521,7 +546,7 @@ core:
     change_email: メールアドレスを変更する
     change_password: パスワードを変更する
     color: 色                                 # Referenced by flarum-tags.yml
-    confirm_password: パスワードを認証する
+    confirm_password: パスワードを確認する
     confirmation_email_sent: "{email}にメールを送信しました。 もし届いていなければスパム/迷惑メールフォルダをご確認ください。"
     custom_footer_text: HTMLはページのフッターの下に表示されます
     custom_footer_title: カスタムフッターを編集
@@ -532,6 +557,8 @@ core:
     discussions: 投稿
     edit: 編集
     email: メールアドレス
+    icon: アイコン
+    icon_text: "<a>FontAwesome</a>でのアイコンの名前を<code>fas fa-</code>接頭語を含めて入力してください。"
     load_more: もっと読む
     log_in: ログイン
     log_out: ログアウト

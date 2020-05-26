@@ -14,6 +14,7 @@ flarum-flags:
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
+      flag_own_posts_label: ユーザーが自分の投稿にフラグを付けることを許可する
       guidelines_url_label: コミュニティガイドラインのURL
       title: フラグの設定
 
@@ -24,11 +25,13 @@ flarum-flags:
     flag_post:
       confirmation_message: この投稿にフラグを付けていただきありがとうございます。モデレーターが確認します。
       dismiss_button: => core.ref.okay
+      reason_details_placeholder: 追加の詳細(オプション)
       reason_inappropriate_label: 不適切
       reason_inappropriate_text: "この投稿は攻撃的、虐待的、または<a>コミュニティのガイドライン</a>に違反しています。"
+      reason_missing_message: モデレーターに詳細を提供してください
       reason_off_topic_label: "オフトピック"
       reason_off_topic_text: この投稿は現在の議論とは関係がなく、他の場所に移動する必要があります。
-      reason_other_label: その他
+      reason_other_label: その他(明記してください)
       reason_spam_label: スパム
       reason_spam_text: この投稿はスパムに当たります。
       submit_button: => flarum-flags.ref.flag_post

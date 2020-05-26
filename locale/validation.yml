@@ -25,6 +25,7 @@ validation:
   dimensions: ":attribute は無効な画像サイズです。"
   distinct: ":attribute に値が重複しています。"
   email: ":attribute は有効なメールアドレスである必要があります。"
+  ends_with: ":attribute は次のいずれかで終わる必要があります: :values"
   exists: "選択された :attribute は無効です。"
   file: ":attribute はファイルである必要があります。"
   filled: ":attribute は必須項目です。"
